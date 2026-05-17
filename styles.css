@@ -549,12 +549,20 @@ button, input, textarea { font: inherit; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 34px;
   height: 34px;
   border-radius: 999px;
   background: var(--paper-deep);
   color: var(--gold-dark);
-  font-size: 1rem;
+}
+
+.phone-icon svg {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  display: block;
 }
 
 .map-panel {
