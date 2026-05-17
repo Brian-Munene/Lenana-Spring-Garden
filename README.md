@@ -7,9 +7,16 @@ Files:
 - contact.html - enquiry and viewing page
 - styles.css - shared responsive styling
 - script.js - mobile navigation, modal and demo form handling
+- sitemap.xml - search engine sitemap
+- robots.txt - crawler instructions
+- favicon.svg - browser/site icon
 
 Images are bundled inside the site:
 assets/images/
+
+Each image has WebP variants:
+- image.webp - desktop/high-resolution source
+- image-800.webp - smaller mobile/tablet source
 
 Preview locally:
 
@@ -21,5 +28,5 @@ http://localhost:8000
 Before launch:
 - Replace placeholder contact details with real sales phone numbers and email.
 - Connect the enquiry forms to a backend, CRM or form service.
-- Add a favicon, robots.txt and sitemap.xml.
-- Use absolute production URLs for Open Graph image metadata.
+- Confirm the production domain. The current SEO metadata assumes https://lenanaspringsgarden.co.ke/.
+- Configure long-lived cache headers for assets/images, styles.css, script.js and favicon.svg.
