@@ -1,7 +1,41 @@
 const navToggle = document.getElementById('navToggle');
 const mainNav = document.getElementById('mainNav');
 
+function initScrollReveal() {
+  const revealItems = document.querySelectorAll(
+    '.section, [data-reveal], .feature-list, .residence-card, .contact-details div, .contact-form'
+  );
+
+  if (!revealItems.length) return;
+
+  document.querySelectorAll('.feature-list').forEach(list => {
+    list.querySelectorAll('li').forEach((item, index) => {
+      item.style.setProperty('--item-index', index);
+    });
+  });
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
+    revealItems.forEach(item => item.classList.add('is-visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    });
+  }, {
+    threshold: 0.16,
+    rootMargin: '0px 0px -70px 0px'
+  });
+
+  revealItems.forEach(item => observer.observe(item));
+}
+
 function initSiteInteractions() {
+  initScrollReveal();
+
   navToggle?.addEventListener('click', () => {
     if (!mainNav) return;
     const isOpen = mainNav.classList.toggle('open');
