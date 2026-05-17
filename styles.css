@@ -640,6 +640,88 @@ button, input, textarea { font: inherit; }
 .contact-form textarea:focus { border-color: var(--gold); }
 .contact-form textarea { min-height: 132px; resize: vertical; }
 
+/* ── Contact page: info + map row ── */
+.contact-info-map {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: clamp(36px, 6vw, 88px);
+  align-items: start;
+}
+
+.contact-info-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-map-col {
+  min-height: 460px;
+}
+
+/* contact-list: stacked phone links */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.contact-list a {
+  color: var(--ink);
+  font-size: 0.96rem;
+  transition: color 0.18s ease;
+}
+
+.contact-list a:hover,
+.contact-list a:focus {
+  color: var(--gold-dark);
+}
+
+.contact-details span:not(.contact-list) {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.96rem;
+  color: var(--muted);
+}
+
+/* ── Contact page: wide form section ── */
+.contact-form-section {
+  background: var(--paper-deep);
+}
+
+.contact-form-header {
+  max-width: 640px;
+  margin-bottom: 42px;
+}
+
+.contact-form-wide {
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  padding: clamp(28px, 4vw, 52px);
+  gap: 0;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 clamp(28px, 4vw, 56px);
+}
+
+.form-full {
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.form-submit {
+  margin-top: 28px;
+}
+
 .site-footer {
   background: var(--charcoal-2);
   color: rgba(255, 255, 255, 0.8);
@@ -782,7 +864,8 @@ button, input, textarea { font: inherit; }
   .split,
   .split.reverse,
   .contact-panel,
-  .contact-showcase { grid-template-columns: 1fr; }
+  .contact-showcase,
+  .contact-info-map { grid-template-columns: 1fr; }
   .strip-item { border-right: 1px solid var(--line); }
   .media-stack { grid-template-columns: 1fr 1fr; }
   .residence-grid { grid-template-columns: 1fr 1fr; }
@@ -831,6 +914,9 @@ button, input, textarea { font: inherit; }
 
   /* Contact section */
   .contact-showcase { gap: 36px; }
+  .contact-info-map { gap: 32px; }
+  .contact-map-col { min-height: 320px; }
+  .form-grid { grid-template-columns: 1fr; }
   .map-panel { min-height: 300px; }
   .map-panel iframe { min-height: 260px; }
   .map-caption { flex-direction: column; align-items: flex-start; gap: 10px; }

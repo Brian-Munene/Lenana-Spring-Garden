@@ -70,60 +70,71 @@
       </div>
     </section>
 
+    <!-- Contact info + Map side by side -->
     <section class="section section-alt" id="enquiry">
-      <div class="wrap contact-panel">
-        <div>
-          <p class="eyebrow">Get in Touch</p>
-          <h2 class="section-title">Home is waiting <span>for you here</span></h2>
-          <p class="lede">Use the enquiry form to schedule a visit, ask about current apartment availability or request purchase terms for Lenana Springs Garden.</p>
-          <div class="contact-details">
-            <div>
-              <strong>Phone</strong>
-              <span class="contact-list">
-                <a href="tel:+254116556666">Sales - 0116556666</a>
-                <a href="tel:+254116557777">Sales - 0116557777</a>
-                <a href="tel:+254116559999">Sales - 0116559999</a>
-              </span>
-            </div>
-            <div>
-              <strong>Office Address</strong>
-              <span>Lenana Road, Kilimani, Nairobi, Kenya</span>
-            </div>
-            <div>
-              <strong>E-mail</strong>
-              <span><a href="mailto:sales@lenanaspringsgarden.co.ke">sales@lenanaspringsgarden.co.ke</a></span>
+      <div class="wrap">
+        <div class="contact-info-map">
+
+          <!-- Left: contact details -->
+          <div class="contact-info-col">
+            <p class="eyebrow">Get in Touch</p>
+            <h2 class="section-title">Home is waiting <span>for you here</span></h2>
+            <div class="contact-details">
+              <div>
+                <strong>Phone</strong>
+                <span class="contact-list">
+                  <a href="tel:+254116556666">Sales &mdash; 0116 556 666</a>
+                  <a href="tel:+254116557777">Sales &mdash; 0116 557 777</a>
+                  <a href="tel:+254116559999">Sales &mdash; 0116 559 999</a>
+                </span>
+              </div>
+              <div>
+                <strong>Office Address</strong>
+                <span>Lenana Road, Kilimani, Nairobi, Kenya</span>
+              </div>
+              <div>
+                <strong>E-mail</strong>
+                <span><a href="mailto:sales@lenanaspringsgarden.co.ke">sales@lenanaspringsgarden.co.ke</a></span>
+              </div>
             </div>
           </div>
+
+          <!-- Right: map -->
+          <div class="map-panel contact-map-col" data-reveal="right">
+            <iframe title="Map to Yaya Centre on Ngong Road, Nairobi" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Yaya%20Centre%2C%20Ngong%20Road%2C%20Nairobi%2C%20Kenya&output=embed"></iframe>
+            <div class="map-caption">
+              <div>
+                <strong>Map Landmark</strong>
+                <span>Yaya Centre, Ngong Road, Nairobi</span>
+              </div>
+              <a href="https://www.google.com/maps/search/?api=1&query=Yaya%20Centre%2C%20Ngong%20Road%2C%20Nairobi%2C%20Kenya" target="_blank" rel="noopener">Get Directions</a>
+            </div>
+          </div>
+
         </div>
-        <form class="contact-form">
-          <label>Your Name<input name="name" autocomplete="name" required></label>
-          <label>Your Email<input name="email" type="email" autocomplete="email" required></label>
-          <label>Preferred Date<input name="date" type="date"></label>
-          <label>Phone Number<input name="phone" autocomplete="tel"></label>
-          <label>Message<textarea name="message"></textarea></label>
-          <button type="submit" class="button button-primary">Send Enquiry</button>
-        </form>
       </div>
     </section>
 
-    <section class="section">
-      <div class="wrap contact-showcase">
-        <div class="contact-copy">
-          <p class="eyebrow">Location</p>
-          <h2 class="section-title">Find us <span>near Yaya Centre</span></h2>
-          <p class="lede">Use Yaya Centre on Ngong Road as the map landmark when planning your visit around Kilimani.</p>
-          <a class="button button-dark" href="https://www.google.com/maps/search/?api=1&query=Yaya%20Centre%2C%20Ngong%20Road%2C%20Nairobi%2C%20Kenya" target="_blank" rel="noopener">Get Directions</a>
+    <!-- Full-width enquiry form -->
+    <section class="section contact-form-section">
+      <div class="wrap">
+        <div class="contact-form-header">
+          <p class="eyebrow">Enquiry Form</p>
+          <h2 class="section-title">Get in Touch <span>schedule a visit</span></h2>
+          <p class="lede">Fill in your details and the sales team will be in touch to confirm availability, pricing and the best apartment type for your needs.</p>
         </div>
-        <div class="map-panel" data-reveal="right">
-          <iframe title="Map to Yaya Centre on Ngong Road, Nairobi" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Yaya%20Centre%2C%20Ngong%20Road%2C%20Nairobi%2C%20Kenya&output=embed"></iframe>
-          <div class="map-caption">
-            <div>
-              <strong>Map Landmark</strong>
-              <span>Yaya Centre, Ngong Road, Nairobi</span>
-            </div>
-            <a href="https://www.google.com/maps/search/?api=1&query=Yaya%20Centre%2C%20Ngong%20Road%2C%20Nairobi%2C%20Kenya" target="_blank" rel="noopener">Open Map</a>
+        <form class="contact-form contact-form-wide">
+          <div class="form-grid">
+            <label>Your Name<input name="name" autocomplete="name" required></label>
+            <label>Your Email<input name="email" type="email" autocomplete="email" required></label>
+            <label>Phone Number<input name="phone" autocomplete="tel"></label>
+            <label>Preferred Date<input name="date" type="date"></label>
           </div>
-        </div>
+          <label class="form-full">Message<textarea name="message"></textarea></label>
+          <div class="form-submit">
+            <button type="submit" class="button button-primary">Send Enquiry</button>
+          </div>
+        </form>
       </div>
     </section>
   </main>
@@ -134,7 +145,7 @@
         <p class="footer-brand">Lenana Springs Garden</p>
         <span>Luxury apartments along Lenana Road in Kilimani, Nairobi.</span>
       </div>
-      <span>© 2026 Lenana Springs Garden</span>
+      <span>&copy; 2026 Lenana Springs Garden</span>
     </div>
   </footer>
 
