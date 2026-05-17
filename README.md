@@ -26,7 +26,6 @@ Then visit:
 http://localhost:8000
 
 Before launch:
-- Replace placeholder contact details with real sales phone numbers and email.
 - Connect the enquiry forms to a backend, CRM or form service.
 - Confirm the production domain. The current SEO metadata assumes https://lenanaspringsgarden.co.ke/.
 - Configure long-lived cache headers for assets/images, styles.css, script.js and favicon.svg.
