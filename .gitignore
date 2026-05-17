@@ -1,0 +1,10 @@
+.DS_Store
+**/.DS_Store
+
+# Local editor and OS metadata
+Thumbs.db
+ehthumbs.db
+
+# Local environment files
+.env
+.env.local
